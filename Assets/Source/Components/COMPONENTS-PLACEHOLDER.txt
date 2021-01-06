@@ -1,0 +1,1 @@
+Keep gameobject components in this folder
