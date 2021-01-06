@@ -32,8 +32,8 @@ Como su nombre indica, en la carpeta /Source/Services alojaremos los diferentes 
 He preparado un vídeo explicando el flujo y funcionamiento del proyecto paso a paso:
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=6AdYYhhpSnY" target="_blank">
-    <img width="75%" src="https://img.youtube.com/vi/6AdYYhhpSnY/0.jpg">
+  <a href="https://www.youtube.com/watch?v=fCIugMLfTqM" target="_blank">
+    <img width="75%" src="https://img.youtube.com/vi/fCIugMLfTqM/0.jpg">
   </a>
 </p>
 
