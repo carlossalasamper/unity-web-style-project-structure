@@ -1,53 +1,52 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using WebStyleDemo.Services;
 
-/// <summary>
-/// Game entry point
-/// </summary>
-public class App : MonoBehaviour
-{
-   /// <summary>
-   /// Keep app alive between scenes
-   /// </summary>
-   private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
+namespace WebStyleDemo {
     /// <summary>
-    /// Initializes the app and load the main scene
+    /// Game entry point
     /// </summary>
-    private void Start()
-    {
-        InitializeServices();
+    public class App : MonoBehaviour {
+        /// <summary>
+        /// Keep app alive between scenes
+        /// </summary>
+        private void Awake () {
+            DontDestroyOnLoad (this.gameObject);
+        }
 
-        SceneManager.LoadScene("MainScene");
-    }
+        /// <summary>
+        /// Initializes the app and load the main scene
+        /// </summary>
+        private void Start () {
+            InitializeServices ();
 
-    private void OnDestroy()
-    {
-        DisposeServices();
-    }
+            SceneManager.LoadScene ("MainScene");
+        }
 
-    /// <summary>
-    /// Initializes all services
-    /// </summary>
-    private void InitializeServices() {
-        Debug.Log("InitializeServices");
+        private void OnDestroy () {
+            DisposeServices ();
+        }
 
-        JsonService.Instance.Initialize();
-        HttpService.Instance.Initialize();
-        GameDataService.Instance.Initialize();
-    }
+        /// <summary>
+        /// Initializes all services
+        /// </summary>
+        private void InitializeServices () {
+            Debug.Log ("InitializeServices");
 
-    /// <summary>
-    ///  Dispose all services
-    /// </summary>
-    private void DisposeServices() {
-        Debug.Log("DisposeServices");
+            JsonService.Instance.Initialize ();
+            HttpService.Instance.Initialize ();
+            GameDataService.Instance.Initialize ();
+        }
 
-        JsonService.Instance.Dispose();
-        HttpService.Instance.Dispose();
-        GameDataService.Instance.Dispose();
+        /// <summary>
+        ///  Dispose all services
+        /// </summary>
+        private void DisposeServices () {
+            Debug.Log ("DisposeServices");
+
+            JsonService.Instance.Dispose ();
+            HttpService.Instance.Dispose ();
+            GameDataService.Instance.Dispose ();
+        }
     }
 }
