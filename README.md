@@ -1,10 +1,10 @@
-﻿# unity3d-web-style-project-structure
+﻿# unity-web-style-project-structure
 
-# Estructura de un juego en Unity3D al estilo Frontend Web 👨‍🍳 - Desarrollo de videojuegos #3
-Una forma sencilla de crear un juego en Unity3D con una estructura similar a la que utilizamos en el desarrollo frontend web con los frameworks de actualidad: Vue.js, Angular y React.
+# Estructura de un juego en Unity al estilo Frontend Web 👨‍🍳 - Desarrollo de videojuegos #3
+Una forma sencilla de crear un juego en Unity con una estructura similar a la que utilizamos en el desarrollo frontend web con los frameworks de actualidad: Vue.js, Angular y React.
 
 ## 1 - Estructura de carpetas
-Tenemos que recordar que por cuestiones de convención de nombres en C# y en Unity3D como framework **los nombres de todas las carpetas tienen que comenzar por mayúscula** preferiblemente.
+Tenemos que recordar que por cuestiones de convención de nombres en C# y en Unity como framework **los nombres de todas las carpetas tienen que comenzar por mayúscula** preferiblemente.
 
 Vamos a explicar cada una de las carpetas de la estructura de directorios del proyecto:
 
@@ -20,7 +20,7 @@ En esta carpeta podemos guardar los componentes UI y de elementos del juego que 
 #### 1.2.2 - /Source/Models
 Dentro de la carpeta /Source/Models guardaremos todas las clases serializables e interfaces que vayamos a utilizar en nuestro juego.
 
-Preparar los modelos de los datos nos ayudará a tener una visión más clara del sistema antes de comenzar a implementar los componentes. A su vez, las interfaces son una forma de abstraer las dependencias que favorece la preparación de tests o la implementación de patrones que requieren de un código desacoplado como es por ejemplo la inyección de dependencias que podemos utilizar en Unity3D gracias al proyecto <a href="https://github.com/svermeulen/Extenject" target="_blank">Zenject/Extenject</a>.
+Preparar los modelos de los datos nos ayudará a tener una visión más clara del sistema antes de comenzar a implementar los componentes. A su vez, las interfaces son una forma de abstraer las dependencias que favorece la preparación de tests o la implementación de patrones que requieren de un código desacoplado como es por ejemplo la inyección de dependencias que podemos utilizar en Unity gracias al proyecto <a href="https://github.com/svermeulen/Extenject" target="_blank">Zenject/Extenject</a>.
 
 #### 1.2.3 - /Source/Scenes
 La carpeta /Source/Scenes contiene los scripts de cada una de las escenas de nuestro juego. Para no perder la analogía con el desarrollo web, su equivalente sería la carpeta /src/views o /src/pages de cualquier framework de desarrollo frontend web.
